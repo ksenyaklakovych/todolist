@@ -1,0 +1,7 @@
+<div>
+    <input class="input" type="checkbox" #checkbox>
+    <input class="input" value="{{item.text}}" type="text" placeholder="Type your task..." #text>
+    <button (click)="changes()" #change>Change</button>
+    <button #submit (click)="onSubmit()">Submit</button>
+    <button (click)="onDelete()">X</button>
+  </div>

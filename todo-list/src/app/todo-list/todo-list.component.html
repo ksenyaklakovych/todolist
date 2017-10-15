@@ -1,0 +1,8 @@
+<div class="container"><todo-list-item *ngFor="let one of itemList" [item]="one" (changes)="onChanges($event)"
+ (deletes)="onDeletes($event)"></todo-list-item>
+<div class="container">
+  <input class="input" type="checkbox" #checkbox>
+  <input class="input" type="text" placeholder="Type your task..." #text>
+  <button (click)="add()">Add</button>
+</div>
+</div>
